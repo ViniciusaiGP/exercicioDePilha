@@ -265,4 +265,4 @@ void exibirTopo(node *PILHA)
 	tmp = PILHA->prox;
 	printf("O item (%d).\n", tmp->num);
 
-}
+}----------------------
