@@ -216,7 +216,7 @@ void localizar(node *PILHA)
 	int localizarItem, ordemCache = 0;	
 	bool itemExiste = false, valorItem = false;
 	if(vazia(PILHA)){
-	printf("Pilha est· vazia!\n\n");
+	printf("Pilha est√° vazia!\n\n");
 	return ;
 	}
 
@@ -243,12 +243,12 @@ void localizar(node *PILHA)
 		for(count=0 ; count < tam ; count++){			
 			valorAtual = (count + 1);				
 			if(valorAtual == ordemCache){	
-				printf("Est· localizado no elemento (%d) da pilha. \n", count+1);
+				printf("Est√° localizado no elemento (%d) da pilha. \n", count+1);
 			}
 			valorAtual = 0;
 		}
 	}else{
-		printf("\nItem n„o localizado na pilha.\n");
+		printf("\nItem n√£o localizado na pilha.\n");
 	}
 
 }
@@ -258,11 +258,11 @@ void exibirTopo(node *PILHA)
 	int localizarItem, ordemCache = 0;	
 	bool itemExiste = false;
 	if(vazia(PILHA)){
-	printf("Pilha est· vazia!\n\n");
+	printf("Pilha est√° vazia!\n\n");
 	return ;
 	}
 	node *tmp;
 	tmp = PILHA->prox;
 	printf("O item (%d).\n", tmp->num);
 
-}----------------------
+}
